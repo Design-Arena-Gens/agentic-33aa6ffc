@@ -1,0 +1,29 @@
+:root{--bg:#0b1020;--muted:#0f1530;--card:#12193a;--text:#e8ecff;--sub:#a7b0d7;--primary:#5b7cfa;--accent:#38d39f;--danger:#ff6b6b}
+*{box-sizing:border-box}
+html,body{padding:0;margin:0;height:100%}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Ubuntu,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,var(--bg),#0d1228);color:var(--text)}
+.container{max-width:1200px;margin:0 auto;padding:24px}
+.header{display:flex;gap:16px;align-items:center;justify-content:space-between;margin:12px 0 24px}
+.badge{background:var(--muted);border:1px solid #1b2350;color:var(--sub);padding:6px 10px;border-radius:999px;font-size:12px}
+.title{font-size:28px;margin:0 0 6px}
+.subtitle{margin:0;color:var(--sub)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.card{grid-column:span 12;background:var(--card);border:1px solid #1b2350;border-radius:14px;padding:16px}
+@media(min-width:720px){.card{grid-column:span 6}}
+@media(min-width:1060px){.card{grid-column:span 4}}
+.tag{display:inline-block;margin:4px 6px 0 0;padding:4px 8px;border-radius:999px;background:#10163a;border:1px solid #1e2a66;color:#b5c0ff;font-size:12px}
+.sector{font-size:12px;color:#9fb0ff}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.button{background:var(--primary);color:white;border:none;border-radius:8px;padding:8px 12px;cursor:pointer}
+.button.secondary{background:#1a2352;border:1px solid #2a3aa0;color:#c8d1ff}
+.button.ghost{background:transparent;border:1px solid #273375;color:#c8d1ff}
+.kpis{display:flex;gap:16px;flex-wrap:wrap}
+.kpi{background:var(--muted);border:1px solid #1b2350;border-radius:12px;padding:10px 12px;color:#cbd4ff}
+.filters{display:grid;grid-template-columns:repeat(12,1fr);gap:12px;margin:10px 0 18px}
+.filters .field{grid-column:span 12}
+@media(min-width:900px){.filters .field.sm-6{grid-column:span 6}.filters .field.sm-4{grid-column:span 4}.filters .field.sm-3{grid-column:span 3}}
+.input, .select{width:100%;padding:10px 12px;border-radius:10px;background:#0f1636;border:1px solid #24306b;color:#eaf0ff}
+.checkbox-group{display:flex;gap:10px;flex-wrap:wrap}
+.checkbox{display:flex;align-items:center;gap:6px;background:#0f1636;border:1px solid #24306b;color:#eaf0ff;padding:8px 10px;border-radius:10px;cursor:pointer}
+.small{font-size:12px;color:#98a5de}
+.footer{margin:24px 0;color:#8894cf;font-size:12px}
